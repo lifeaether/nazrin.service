@@ -7,21 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE456B99172188A90092682E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE456B98172188A90092682E /* Cocoa.framework */; };
 		CE456BA3172188A90092682E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE456BA1172188A90092682E /* InfoPlist.strings */; };
 		CE456BA5172188A90092682E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE456BA4172188A90092682E /* main.m */; };
+		CE456BB3172199FC0092682E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE456B9D172188A90092682E /* Foundation.framework */; };
+		CE456BB517219A220092682E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE456BB417219A220092682E /* Cocoa.framework */; };
+		CE456BB817219B1D0092682E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE456BBA17219B1D0092682E /* Localizable.strings */; };
+		CE94A87617219EC9008947E1 /* ServicesMenu.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE94A87817219EC9008947E1 /* ServicesMenu.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE456B95172188A90092682E /* nazrin.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nazrin.service; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE456B98172188A90092682E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		CE456B9B172188A90092682E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		CE456B9C172188A90092682E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		CE456B9D172188A90092682E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE456BA0172188A90092682E /* nazrin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nazrin-Info.plist"; sourceTree = "<group>"; };
-		CE456BA2172188A90092682E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE456BA4172188A90092682E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE456BA4172188A90092682E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE456BA6172188A90092682E /* nazrin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nazrin-Prefix.pch"; sourceTree = "<group>"; };
+		CE456BB417219A220092682E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE456BB917219B1D0092682E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE456BBB17219C320092682E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE94A87317219C8D008947E1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CE94A87717219EC9008947E1 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file; name = ja; path = ja.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
+		CE94A87917219ECD008947E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/ServicesMenu.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE456B99172188A90092682E /* Cocoa.framework in Frameworks */,
+				CE456BB517219A220092682E /* Cocoa.framework in Frameworks */,
+				CE456BB3172199FC0092682E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,39 +62,23 @@
 		CE456B97172188A90092682E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE456B98172188A90092682E /* Cocoa.framework */,
-				CE456B9A172188A90092682E /* Other Frameworks */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE456B9A172188A90092682E /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CE456B9B172188A90092682E /* AppKit.framework */,
-				CE456B9C172188A90092682E /* CoreData.framework */,
+				CE456BB417219A220092682E /* Cocoa.framework */,
 				CE456B9D172188A90092682E /* Foundation.framework */,
 			);
-			name = "Other Frameworks";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CE456B9E172188A90092682E /* nazrin */ = {
 			isa = PBXGroup;
 			children = (
-				CE456B9F172188A90092682E /* Supporting Files */,
-			);
-			path = nazrin;
-			sourceTree = "<group>";
-		};
-		CE456B9F172188A90092682E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE456BA0172188A90092682E /* nazrin-Info.plist */,
-				CE456BA1172188A90092682E /* InfoPlist.strings */,
 				CE456BA4172188A90092682E /* main.m */,
 				CE456BA6172188A90092682E /* nazrin-Prefix.pch */,
+				CE456BA0172188A90092682E /* nazrin-Info.plist */,
+				CE456BA1172188A90092682E /* InfoPlist.strings */,
+				CE456BBA17219B1D0092682E /* Localizable.strings */,
+				CE94A87817219EC9008947E1 /* ServicesMenu.strings */,
 			);
-			name = "Supporting Files";
+			path = nazrin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +115,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = CE456B8A172188690092682E;
 			productRefGroup = CE456B96172188A90092682E /* Products */;
@@ -142,6 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE456BA3172188A90092682E /* InfoPlist.strings in Resources */,
+				CE456BB817219B1D0092682E /* Localizable.strings in Resources */,
+				CE94A87617219EC9008947E1 /* ServicesMenu.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +155,27 @@
 		CE456BA1172188A90092682E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CE456BA2172188A90092682E /* en */,
+				CE456BBB17219C320092682E /* ja */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE456BBA17219B1D0092682E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE456BB917219B1D0092682E /* en */,
+				CE94A87317219C8D008947E1 /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CE94A87817219EC9008947E1 /* ServicesMenu.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE94A87717219EC9008947E1 /* ja */,
+				CE94A87917219ECD008947E1 /* en */,
+			);
+			name = ServicesMenu.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

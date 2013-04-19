@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  nazrin
+
+  Created by lifeaether on 2013/04/20.
+
+*/
+
+"Error: Pasteboard does not contains string or URL." = "ペーストボードにテキストまたはURLが含まれていません。";
+"Error: nazrin.service failed to get shortening URL from nazr.in." = "nazrin.serviceはnazr.inから短縮URLの取得に失敗しました。";
+"Error: The URL couldn't shorten URL." = "URLは短縮できませんでした。";

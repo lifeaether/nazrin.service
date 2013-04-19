@@ -34,7 +34,7 @@
     NSData *responseData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&error];
     
     if ( ! responseData ) {
-        *errorString = NSLocalizedString( @"Error: NazService failed to get shortening URL from nazr.in.", nil );
+        *errorString = NSLocalizedString( @"Error: nazrin.service failed to get shortening URL from nazr.in.", nil );
         return;
     }
     
@@ -55,7 +55,7 @@ int main(int argc, char *argv[])
     NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
     
     id serviceProvider = [[Nazrin alloc] init];
-    NSRegisterServicesProvider( serviceProvider, @"NazService" );
+    NSRegisterServicesProvider( serviceProvider, @"nazrin" );
     
     [[NSRunLoop currentRunLoop] run];
     
