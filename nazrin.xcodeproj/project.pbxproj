@@ -6,14 +6,112 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE456B99172188A90092682E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE456B98172188A90092682E /* Cocoa.framework */; };
+		CE456BA3172188A90092682E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE456BA1172188A90092682E /* InfoPlist.strings */; };
+		CE456BA5172188A90092682E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE456BA4172188A90092682E /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE456B95172188A90092682E /* nazrin.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nazrin.service; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE456B98172188A90092682E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE456B9B172188A90092682E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE456B9C172188A90092682E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE456B9D172188A90092682E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE456BA0172188A90092682E /* nazrin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nazrin-Info.plist"; sourceTree = "<group>"; };
+		CE456BA2172188A90092682E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE456BA4172188A90092682E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE456BA6172188A90092682E /* nazrin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "nazrin-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE456B92172188A90092682E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE456B99172188A90092682E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		CE456B8A172188690092682E = {
 			isa = PBXGroup;
 			children = (
+				CE456B9E172188A90092682E /* nazrin */,
+				CE456B97172188A90092682E /* Frameworks */,
+				CE456B96172188A90092682E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
+		CE456B96172188A90092682E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE456B95172188A90092682E /* nazrin.service */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE456B97172188A90092682E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE456B98172188A90092682E /* Cocoa.framework */,
+				CE456B9A172188A90092682E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE456B9A172188A90092682E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE456B9B172188A90092682E /* AppKit.framework */,
+				CE456B9C172188A90092682E /* CoreData.framework */,
+				CE456B9D172188A90092682E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE456B9E172188A90092682E /* nazrin */ = {
+			isa = PBXGroup;
+			children = (
+				CE456B9F172188A90092682E /* Supporting Files */,
+			);
+			path = nazrin;
+			sourceTree = "<group>";
+		};
+		CE456B9F172188A90092682E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE456BA0172188A90092682E /* nazrin-Info.plist */,
+				CE456BA1172188A90092682E /* InfoPlist.strings */,
+				CE456BA4172188A90092682E /* main.m */,
+				CE456BA6172188A90092682E /* nazrin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE456B94172188A90092682E /* nazrin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE456BB0172188A90092682E /* Build configuration list for PBXNativeTarget "nazrin" */;
+			buildPhases = (
+				CE456B91172188A90092682E /* Sources */,
+				CE456B92172188A90092682E /* Frameworks */,
+				CE456B93172188A90092682E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nazrin;
+			productName = nazrin;
+			productReference = CE456B95172188A90092682E /* nazrin.service */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CE456B8B172188690092682E /* Project object */ = {
@@ -29,23 +127,129 @@
 				en,
 			);
 			mainGroup = CE456B8A172188690092682E;
+			productRefGroup = CE456B96172188A90092682E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CE456B94172188A90092682E /* nazrin */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE456B93172188A90092682E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE456BA3172188A90092682E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE456B91172188A90092682E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE456BA5172188A90092682E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE456BA1172188A90092682E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE456BA2172188A90092682E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE456B8F172188690092682E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
 			};
 			name = Debug;
 		};
 		CE456B90172188690092682E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				SDKROOT = macosx10.7;
+			};
+			name = Release;
+		};
+		CE456BB1172188A90092682E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nazrin/nazrin-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "nazrin/nazrin-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = service;
+			};
+			name = Debug;
+		};
+		CE456BB2172188A90092682E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "nazrin/nazrin-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "nazrin/nazrin-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.7;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};
@@ -57,6 +261,15 @@
 			buildConfigurations = (
 				CE456B8F172188690092682E /* Debug */,
 				CE456B90172188690092682E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE456BB0172188A90092682E /* Build configuration list for PBXNativeTarget "nazrin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE456BB1172188A90092682E /* Debug */,
+				CE456BB2172188A90092682E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
