@@ -21,13 +21,15 @@
 
     if ( ! type ) {
         *errorString = NSLocalizedString( @"Error: Pasteboard does not contains string or URL.", nil );
+        NSLog( @"%@", *errorString );
+        return;
     }
     
     NSString *srcString = [pasteBoard stringForType:type];
-    NSString *escapedString = [srcString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *escapedString = [srcString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
     NSString *nazrinURLString = [NSString stringWithFormat:@"http://nazr.in/api/shorten?url=%@", escapedString];
+
     NSURL *url = [NSURL URLWithString:nazrinURLString];
-    
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     NSURLResponse *response = nil;
     NSError *error = nil;
@@ -35,12 +37,14 @@
     
     if ( ! responseData ) {
         *errorString = NSLocalizedString( @"Error: nazrin.service failed to get shortening URL from nazr.in.", nil );
+        NSLog( @"%@", *errorString );
         return;
     }
     
     NSString *responseString = [[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding] autorelease];
     if ( ! [responseString hasPrefix:@"http"] ) {
         *errorString = NSLocalizedString( @"Error: The URL couldn't shorten URL.", nil );
+        NSLog( @"%@", *errorString );
         return;
     }
     
